@@ -2,9 +2,9 @@
   <img src="/.github/githubrepos_logo.png" alt="GitRepos" />
 </h1>
 
-<h4 align="center">
+<h3 align="center">
   Sistema de busca e listagem de repositórios e issues no Github
-</h4>
+</h3>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/michelonsouza/rocketseat-desafio-05?color=%231070ad">
@@ -14,17 +14,19 @@
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%231070ad">
+
+  <img alt="Stargazers" src="https://img.shields.io/github/stars/michelonsouza/rocketseat-desafio-05?style=social">
 </p>
 
-<h4>Descrição:</h4>
+<h3>📝 Descrição:</h3>
 <p>
-  O intuito dessa aplicação é ter um sistema simples e leve para consultas de repositórios e issues no Github.
+  O intuito desta aplicação é ter um sistema simples e leve para consultas de repositórios e issues no Github.
 </p>
 <p>
-  O projeto é utilizado apenas para fins didáticos e cedito pela <a href="https://rocketseat.com.br">Rocketseat</a> para complementar os estudos.
+  O projeto é utilizado apenas para fins didáticos e estruturado pela <a href="https://rocketseat.com.br">Rocketseat</a> como desafio do Bootcamp.
 </p>
 
-<h4>As teclogias utilizadas para a ciração deste projeto foram:</h4>
+<h3>🗒️ As teclogias utilizadas para a ciração deste projeto foram:</h3>
 
 <ul>
   <li><a target="blank" rel="noopener noreferrer" href="https://reactjs.org/">ReactJS</a></li>
@@ -38,11 +40,14 @@
   <li><a target="blank" rel="noopener noreferrer" href="https://polished.js.org/">polished</a></li>
 </ul>
 
-<h4>Demonstração de usabilidade da aplicação:</h4>
-<h5>Busca por repositórios:</h5>
+<h3>👀 Demonstração de usabilidade da aplicação:</h3>
+<h4>🔍 Busca por repositórios:</h4>
 
-<img src="/.github/search_repository.gif" />
+<img src="/.github/search_repository.gif" width="500" />
 
-<h5>Busca visualização das issues:</h5>
+<h4>🤔 Visualização das issues:</h4>
 
-<img src="/.github/view_issues.gif" />
+<img src="/.github/view_issues.gif" width="500" />
+<hr>
+
+<h3 align="center">Made with 🖤 by Michelon Souza</h3>
