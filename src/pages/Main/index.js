@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { FaGithubAlt, FaPlus, FaTrashAlt } from 'react-icons/fa';
 import Spinner from 'react-spinner-material';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 import api from '../../services/api';
 import Container from '../../components/Container';
-import { Form, SubmitButton, List } from './styles';
+import { Form, SubmitButton, List, NoRepositories } from './styles';
 
 export default function Main() {
   const [newRepo, setNewRepo] = useState('');
   const [loading, setLoading] = useState(false);
   const [repositories, setRepositories] = useState([]);
+  const [noRepositories, setNoRepositories] = useState(false);
 
   useEffect(() => {
     const repos = localStorage.getItem('@GithubRepos:repositories');
@@ -25,6 +27,10 @@ export default function Main() {
       '@GithubRepos:repositories',
       JSON.stringify(repositories)
     );
+  }, [repositories]);
+
+  useMemo(() => {
+    setNoRepositories(!!repositories.length);
   }, [repositories]);
 
   function handleInputChange({ target: { value } }) {
@@ -46,8 +52,7 @@ export default function Main() {
       setRepositories([...repositories, data]);
       setNewRepo('');
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.log(error);
+      toast.error('Repositório não encontrado');
     }
 
     setLoading(false);
@@ -100,6 +105,11 @@ export default function Main() {
           </li>
         ))}
       </List>
+      {!noRepositories && (
+        <NoRepositories>
+          <h2>Sem repositórios no momento :(</h2>
+        </NoRepositories>
+      )}
     </Container>
   );
 }

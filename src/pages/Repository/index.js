@@ -45,7 +45,7 @@ function Repository({ match: { params } }) {
     }
 
     loadRepository();
-  }, []);
+  }, [params.repository]);
 
   async function handleCatchIssues(newPage) {
     const repoName = decodeURIComponent(params.repository);

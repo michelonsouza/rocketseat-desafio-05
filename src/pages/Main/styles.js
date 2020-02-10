@@ -80,3 +80,15 @@ export const List = styled.ul`
     }
   }
 `;
+
+export const NoRepositories = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+`;

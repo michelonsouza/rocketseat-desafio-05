@@ -16,7 +16,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%231070ad">
 </p>
 
-<h5>Descrição:</h5>
+<h4>Descrição:</h4>
 <p>
   O intuito dessa aplicação é ter um sistema simples e leve para consultas de repositórios e issues no Github.
 </p>
@@ -24,7 +24,7 @@
   O projeto é utilizado apenas para fins didáticos e cedito pela <a href="https://rocketseat.com.br">Rocketseat</a> para complementar os estudos.
 </p>
 
-<h5>As teclogias utilizadas para a ciração deste projeto foram:</h5>
+<h4>As teclogias utilizadas para a ciração deste projeto foram:</h4>
 
 <ul>
   <li><a target="blank" rel="noopener noreferrer" href="https://reactjs.org/">ReactJS</a></li>
@@ -34,5 +34,15 @@
   <li><a target="blank" rel="noopener noreferrer" href="https://prettier.io/">prettier</a></li>
   <li><a target="blank" rel="noopener noreferrer" href="https://styled-components.com/">styled-components</a></li>
   <li><a target="blank" rel="noopener noreferrer" href="https://reacttraining.com/react-router/">react-router-dom</a></li>
+  <li><a target="blank" rel="noopener noreferrer" href="https://fkhadra.github.io/react-toastify/">react-toastify</a></li>
+  <li><a target="blank" rel="noopener noreferrer" href="https://polished.js.org/">polished</a></li>
 </ul>
 
+<h4>Demonstração de usabilidade da aplicação:</h4>
+<h5>Busca por repositórios:</h5>
+
+<img src="/.github/search_repository.gif" />
+
+<h5>Busca visualização das issues:</h5>
+
+<img src="/.github/view_issues.gif" />
